@@ -1,117 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro Reoyo</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script defer src="../javaScript/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alejandro Reoyo</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../javaScript/script.js"></script>
 </head>
 <header>
-    <nav>
-        <ul>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
 
 <body>
-    <section id="inicio">
-        <h1>Hola!, soy ALEJANDRO REOYO</h1>
-        <P>DESARROLLADOR WEB</P>
-        <p>Desarrollo aplicaciones web completas utilizando tecnologías modernas y buenas prácticas. Me enfoco en crear
-            soluciones eficientes, mantenibles y bien estructuradas, prestando atención tanto al funcionamiento como a
-            la experiencia del usuario.</p>
-            <button>Descargar CV</button>
-
-    </section>
-
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <div id ="sobreMiContentn">
-            <div id="divSobreMi">
-                <h3>Alejandro Reoyo</h3>
-                <p>
-                    Soy desarrollador web enfocado en crear aplicaciones modernas, funcionales y bien estructuradas, utilizando tecnologías actuales y buenas prácticas. Me interesa construir soluciones completas, cuidando tanto la lógica como la experiencia del usuario.
-                </p>
-                <p>
-                    Tengo experiencia trabajando en equipo con metodologías ágiles como Scrum y Kanban. Me caracterizo por estar muy enfocado en el trabajo, con mentalidad de mejora continua y compromiso por desarrollar soluciones claras, mantenibles y de calidad.
-                </p>
-            </div>
-            <img src="../images/perfil.png" alt="Foto de Alejandro Reoyo">
-        </div>
+  <section id="inicio">
+    <div id="inicioContent">
+      <div id="inicioTexto">
+        <h1>Hola!, soy <br /><span>ALEJANDRO REOYO</span></h1>
+        <p id="especialidad"></p>
+        <p>
+          Desarrollo aplicaciones web completas utilizando tecnologías
+          modernas y buenas prácticas. Me enfoco en crear soluciones
+          eficientes, mantenibles y bien estructuradas, prestando atención
+          tanto al funcionamiento como a la experiencia del usuario.
         </p>
-    </section>
-    <section id="skills">
-        <h2>Mis habilidades</h2>
-        <div id="lenguajes">
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/html.png" alt="">
-                    <p>HTML</p>
-            </div>
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/css.png" alt="">
-                    <p>CSS</p>
-            </div>
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/javascript.png" alt="">
-                    <p>JavaScript</p>
-            </div>
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/java.png" alt="">
-                    <p>Java</p>
-            </div>
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/sql.png" alt="">
-                    <p>SQL</p>
-            </div>
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/bash.png" alt="">
-                    <p>Bash</p>
-            </div>
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/powershell.png" alt="">
-                    <p>PowerShell</p>
-            </div>
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/android.png" alt="">
-                    <p>Android</p>
-            </div>
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/git.png" alt="">
-                    <p>Git</p>
-            </div>
-            <div class="cajaLenguaje">
-                    <img src="../images/logo/github.png" alt="">
-                    <p>GitHub</p>
-            </div>
+        <div class="btn-container">
+          <a href="../docs/CV.pdf" download class="btn-pro">
+            <span>Descargar CV</span>
+          </a>
         </div>
-    </section>
+      </div>
+      <img src="../images/siluetaPerfil.png" alt="Foto de Alejandro Reoyo" />
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <div id="proyectos">
-            <div class="cajaProyectos">
-                    <img src="" alt="">
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción del proyecto 1.</p>
-                    <a href=""><img src="" alt=""></a>
-            </div>
-        </div>
-    </section>
+  <section id="about">
+    <h2 class="titulo">Sobre mí</h2>
+    <div id="sobreMiContent">
+      <img src="../images/siluetaCoffe.png" alt="" />
+      <div id="divSobreMi">
+        <h3>Alejandro Reoyo</h3>
+        <p>
+          Soy desarrollador web enfocado en crear aplicaciones modernas,
+          funcionales y bien estructuradas, utilizando tecnologías actuales y
+          buenas prácticas. Me interesa construir soluciones completas,
+          cuidando tanto la lógica como la experiencia del usuario.
+        </p>
+        <p>
+          Tengo experiencia trabajando en equipo con metodologías ágiles como
+          Scrum y Kanban. Me caracterizo por estar muy enfocado en el trabajo,
+          con mentalidad de mejora continua y compromiso por desarrollar
+          soluciones claras, mantenibles y de calidad.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2 class="titulo">Mis habilidades</h2>
+    <div id="lenguajes">
+      <div class="cajaLenguaje">
+        <img src="../images/logo/html.png" alt="" />
+        <p>HTML 5</p>
+      </div>
+      <div class="cajaLenguaje">
+        <img src="../images/logo/css.png" alt="" />
+        <p>CSS 3</p>
+      </div>
+      <div class="cajaLenguaje">
+        <img src="../images/logo/javascript.png" alt="" />
+        <p>JavaScript</p>
+      </div>
+      <div class="cajaLenguaje">
+        <img src="../images/logo/java.png" alt="" />
+        <p>Java</p>
+      </div>
+      <div class="cajaLenguaje">
+        <img src="../images/logo/sql.png" alt="" />
+        <p>SQL</p>
+      </div>
+      <div class="cajaLenguaje">
+        <img src="../images/logo/bash.png" alt="" />
+        <p>Bash</p>
+      </div>
+      <div class="cajaLenguaje">
+        <img src="../images/logo/powershell.png" alt="" />
+        <p>PowerShell</p>
+      </div>
+      <div class="cajaLenguaje">
+        <img src="../images/logo/android.png" alt="" />
+        <p>Android</p>
+      </div>
+      <div class="cajaLenguaje">
+        <img src="../images/logo/git.png" alt="" />
+        <p>Git</p>
+      </div>
+      <div class="cajaLenguaje">
+        <img src="../images/logo/github.png" alt="" />
+        <p>GitHub</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>¡Contáctame para colaborar en tu próximo proyecto!</p>
-        <a href="">Linkedin</a>
-        <a href="">GitHub</a>
-        <a href="">Correo</a>
-        <a href="">Instagram</a>
-    </section>
+  <section id="projects">
+    <h2 class="titulo">Proyectos</h2>
+    <div id="proyectos">
+      <div class="cajaProyectos">
+        <img src="" alt="" />
+        <h3>Proyecto 1</h3>
+        <p>Descripción del proyecto 1.</p>
+        <a href=""><img src="" alt="" /></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="titulo">Contacto</h2>
+    <p>¿Hablamos? Estoy abierto a nuevas oportunidades y colaboraciones.!</p>
+    <div id="redes">
+      <a href="https://www.linkedin.com/in/alex-reoyo/" target="_blank" rel="noopener noreferrer" class="social-btn">
+        <img src="../images/logo/linkedin-blanco.svg" class="icon default" alt="LinkedIn">
+        <img src="../images/logo/linkedin-verde.svg" class="icon hover" alt="">
+      </a>
+
+      <a href="https://github.com/AlexReoyo" target="_blank" rel="noopener noreferrer" class="social-btn">
+        <img src="../images/logo/github-blanco.svg" class="icon default" alt="GitHub">
+        <img src="../images/logo/github-verde.svg" class="icon hover" alt="">
+      </a>
+
+      <a href="mailto:reoyonavasalex30@gmail.com" class="social-btn">
+        <img src="../images/logo/email-blanco.svg" class="icon default" alt="Correo">
+        <img src="../images/logo/email-verde.svg" class="icon hover" alt="">
+      </a>
+
+      <a href="https://www.instagram.com/alereoyo_57/" target="_blank" rel="noopener noreferrer" class="social-btn">
+        <img src="../images/logo/instagram-blanco.svg" class="icon default" alt="Instagram">
+        <img src="../images/logo/instagram-verde.svg" class="icon hover" alt="">
+      </a>
+    </div>
+  </section>
 </body>
 
 </html>
