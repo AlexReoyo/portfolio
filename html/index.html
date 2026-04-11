@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alejandro Reoyo</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <link rel="shortcut icon" href="../images/siluetaPerfil.png" type="image/x-icon">
   <script defer src="../javaScript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
 </head>
 <header>
   <nav>
-    <ul>
+    <ul class="nav-links">
       <li><a href="#about">Sobre mí</a></li>
       <li><a href="#skills">Habilidades</a></li>
       <li><a href="#projects">Proyectos</a></li>
@@ -41,11 +44,11 @@
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="reveal">
     <h2 class="titulo">Sobre mí</h2>
     <div id="sobreMiContent">
-      <img src="../images/siluetaCoffe.png" alt="" />
-      <div id="divSobreMi">
+      <img src="../images/siluetaCoffe.png" alt="" class="reveal" />
+      <div id="divSobreMi" class="reveal">
         <h3>Alejandro Reoyo</h3>
         <p>
           Soy desarrollador web enfocado en crear aplicaciones modernas,
@@ -62,8 +65,8 @@
       </div>
     </div>
   </section>
-  <section id="skills">
-    <h2 class="titulo">Mis habilidades</h2>
+  <section id="skills" class="reveal">
+    <h2 class="titulo" class="reveal">Mis habilidades</h2>
     <div id="lenguajes">
       <div class="cajaLenguaje">
         <img src="../images/logo/html.png" alt="" />
@@ -108,21 +111,63 @@
     </div>
   </section>
 
-  <section id="projects">
-    <h2 class="titulo">Proyectos</h2>
+  <section id="projects" class="reveal">
+    <h2 class="titulo" class="titulo reveal">Proyectos</h2>
     <div id="proyectos">
-      <div class="cajaProyectos">
-        <img src="" alt="" />
-        <h3>Proyecto 1</h3>
-        <p>Descripción del proyecto 1.</p>
-        <a href=""><img src="" alt="" /></a>
+      <div class="cajaProyectos" class="reveal">
+        <img src="../images/proyectos/snake.png" alt="Videojuego Snake" />
+        <h3>Videojuego Snake</h3>
+        <p>Implementación de Snake en Java con control de movimiento, crecimiento dinámico y colisiones.</p>
+        <a href="https://github.com/AlexReoyo/JuegoSnake" target="_blank" rel="noopener noreferrer"><img
+            src="../images/logo/github.png" alt="" /></a>
+      </div>
+      <div class="cajaProyectos" class="reveal">
+        <img src="../images/proyectos/space-invaders.png" alt="Videojuego Space Invaders" />
+        <h3>Videojuego Space Invaders</h3>
+        <p>Prototipo de Space Invaders en Java centrado en lógica de juego, disparos y detección de colisiones. </p>
+        <a href="https://github.com/Alan-VC/SpaceInvaders" target="_blank" rel="noopener noreferrer"><img
+            src="../images/logo/github.png" alt="" /></a>
+      </div>
+      <div class="cajaProyectos" class="reveal">
+        <img src="../images/proyectos/portfolio.png" alt="Portfolios" />
+        <h3>Portfolio</h3>
+        <p>Este es mi portfolio personal donde muestro mis proyectos y habilidades y un resumen de mi experiencia y
+          educación.</p>
+        <a href="https://github.com/AlexReoyo/portfolio" target="_blank" rel="noopener noreferrer"><img
+            src="../images/logo/github.png" alt="" /></a>
+      </div>
+      <div class="cajaProyectos" class="reveal">
+        <img src="../images/proyectos/almacen.jpg" alt="Aplicación de almacén" />
+        <h3>Aplicación de Almacén MasterZone</h3>
+        <p>Desarrollo de una aplicación para gestionar el inventario de un almacén utilizando una base de datos.</p>
+        <a href="https://github.com/AlexReoyo/ProgramasAndroid/tree/main/masterzone" target="_blank"
+          rel="noopener noreferrer"><img src="../images/logo/github.png" alt="" /></a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact"  class="reveal">
     <h2 class="titulo">Contacto</h2>
     <p>¿Hablamos? Estoy abierto a nuevas oportunidades y colaboraciones.!</p>
+    <form class="form-contacto" action="https://formspree.io/f/xpqoveoo" method="POST">
+  
+  <p class="form-text">
+    Completa el formulario y me pondré en contacto contigo lo antes posible
+  </p>
+
+  <input type="text" name="name" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu email" required>
+  <input type="text" name="subject" placeholder="Asunto" required>
+
+  <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+  <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portfolio">
+
+  <button type="submit" class="btn-form">Enviar</button>
+
+  <p id="form-status"></p>
+
+</form>
     <div id="redes">
       <a href="https://www.linkedin.com/in/alex-reoyo/" target="_blank" rel="noopener noreferrer" class="social-btn">
         <img src="../images/logo/linkedin-blanco.svg" class="icon default" alt="LinkedIn">
