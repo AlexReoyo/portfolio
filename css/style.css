@@ -260,7 +260,7 @@ li {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
 }
 
@@ -275,10 +275,10 @@ li {
     text-decoration: none;
     align-self: center;
     align-items: center;
-    margin: auto;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 }
+
 
 .cajaProyectos a>img {
     width: 15%;
@@ -318,17 +318,51 @@ li {
         0 0 40px rgba(0, 255, 136, 0.6);
 }
 
+.btn-proyecto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.btn-proyecto a > img {
+    margin: 0;
+    width: clamp(36px, 6vw, 48px);
+    height: auto;
+    padding: 6px;
+    background-color: #2a2e2e;
+    margin-right: 12px;
+    transition: all 0.3s ease;
+}
+
+/* No dar fondo verde a todos los enlaces dentro de .btn-proyecto */
+.btn-proyecto a {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Si hay un enlace con la clase .btn-pro (View), mantener su estilo habitual */
+.btn-proyecto a.btn-pro {
+    background: linear-gradient(120deg, #59ff00, transparent, #59ff00);
+    background-size: 200%;
+    animation: borderFlow 4s linear infinite;
+    padding: 2px;
+    border-radius: 14px;
+}
+
+
+
 
 
 #contact {
     background-color: #1a1c1b;
     padding-block: 0px;
     padding-bottom: 50px;
-}
-
-#contact {
     text-align: center;
 }
+
 
 #redes {
     display: flex;
